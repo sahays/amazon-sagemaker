@@ -56,22 +56,26 @@ If you use SageMaker for model training and deployment using Amazon P3 ML instan
 
 Training example: If you are using one instance of ml.p3.8xlarge to train your data and you run it for 100 hours in a month with 1 TB of SageMaker storage, and 10 TB of S3 storage 
 
+
 | Category | Type | Usage | Unit cost | Estimated cost |
-| ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
 | Compute | ml.p3.8xlarge | 100 hours | $17.136 | $17.136*100 = $1714 |
 | Storage | S3 | 10 TB per month | $0.023 per GB | $235 |
 | Storage | SageMaker local storage | 1 TB per month | $0.169 per GB-month | $140 |
+
 
 Total for this example: $2089
 
 Deployment example (deploying your model to run inferences at scale): After training, you deployed the model on SageMaker that runs all the time and performs real-time inference
 
+
 | Category | Type | Usage | Unit cost | Estimated Cost |
-| ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
 | Compute | ml.c5.9xlarge | 724 hours | $2.661 | $2.661*724 = $1915 |
 | Storage | S3 | 10 TB per month | $0.023 per GB | $235 |
 | Storage | SageMaker local storage | 1 TB per month | $0.169 per GB-month | $160 |
 | Data processing | SageMaker | 1 TB per month | $0.016 per GB | $160 |
+
 
 Total for this example: $2430
 
